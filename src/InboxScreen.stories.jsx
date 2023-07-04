@@ -90,7 +90,7 @@ export const ArchiveTask = {
       const taskInput = await findByRole(itemToEdit, 'textbox');
       await userEvent.type(taskInput, ' and disabled state');
       await expect(taskInput.value).toBe(
-        'Fix bug in input error state and disabled state11'
+        'Fix bug in input error state and disabled state'
       );
     },
   };
